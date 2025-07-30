@@ -4,7 +4,7 @@ published: 2025-07-30
 description: 'LangChain入门教程'
 image: ''
 tags: ['LangChain','大模型','Agent','AI']
-category: 'LangChian'
+category: '教程'
 draft: false 
 lang: ''
 ---
