@@ -1,7 +1,7 @@
 ---
 title: Langchain入门教程
 published: 2025-07-30
-description: 'LangChain入门教程'
+description: 'LangChain学习记录，不要用LangChain写agent，LangGraph更好用'
 image: ''
 tags: ['LangChain','大模型','Agent','AI']
 category: '教程'
