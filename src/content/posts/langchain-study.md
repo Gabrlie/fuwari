@@ -8,8 +8,6 @@ category: '教程'
 draft: false 
 lang: ''
 ---
-# LangChain入门教程
-
 ## 简介
 
 LangChain 是一个专为开发者设计的开源框架，用于构建基于大语言模型的复杂应用。它通过模块化设计简化了 LLM 应用的开发流程，支持灵活定制复杂逻辑。
