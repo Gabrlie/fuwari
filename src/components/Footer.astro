@@ -1,26 +1,86 @@
 ---
 
 import { profileConfig } from "../config";
-import { url } from "../utils/url-utils";
 
 const currentYear = new Date().getFullYear();
 ---
 
-<!--<div class="border-t border-[var(&#45;&#45;primary)] mx-16 border-dashed py-8 max-w-[var(&#45;&#45;page-width)] flex flex-col items-center justify-center px-6">-->
 <div class="transition border-t border-black/10 dark:border-white/15 my-10 border-dashed mx-32"></div>
-<!--<div class="transition bg-[oklch(92%_0.01_var(&#45;&#45;hue))] dark:bg-black rounded-2xl py-8 mt-4 mb-8 flex flex-col items-center justify-center px-6">-->
-<div class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6">
-    <div class="transition text-50 text-sm text-center">
-        &copy; <span id="copyright-year">{currentYear}</span> {profileConfig.name}. All Rights Reserved. /
-        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('rss.xml')}>RSS</a> /
-        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('sitemap-index.xml')}>Sitemap</a><br>
-        Powered by
-        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
-        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
-    </div>
-</div>
 
-<script type="text/javascript">function runtime(){const t=new Date("09/01/2024 08:00:00"),n=new Date,s=n-t,e=Math.floor(s/1e3),o=Math.floor(e/86400),i=Math.floor(e%86400/3600),a=Math.floor(e%3600/60),r=e%60;document.getElementById("runningtime").innerHTML=`⭐本站已运行: ${o}天${i}小时${a}分${r}秒 ☁️`}setInterval(runtime,1e3)</script>
-<div class="transition text-50 text-sm text-center hidden md:block"><p id="runningtime"> </p></div>
+<div class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6">
+    <div class="transition text-50 text-sm text-center flex flex-wrap justify-center items-center gap-2">
+        <!-- 版权信息 -->
+        <div class="github-badge">
+            <span class="badge-subject">Copyright</span>
+            <span class="badge-value bg-blue">©{currentYear} {profileConfig.name}</span>
+        </div>
+        
+        <!-- 技术支持 -->
+        <div class="github-badge">
+            <span class="badge-subject">Powered by</span>
+            <a href="https://astro.build" target="_blank" class="badge-link">
+                <span class="badge-value bg-green">Astro</span>
+            </a>
+        </div>
+        
+        <!-- 主题信息 -->
+        <div class="github-badge">
+            <span class="badge-subject">Theme</span>
+            <a href="https://github.com/saicaca/fuwari" target="_blank" class="badge-link">
+                <span class="badge-value bg-orange">Fuwari</span>
+            </a>
+        </div>
+    </div>
+
+    <style>
+        /* 徽章样式 */
+        .github-badge {
+            display: inline-block;
+            border-radius: 4px;
+            text-shadow: none;
+            font-size: 12px;
+            color: #fff;
+            line-height: 15px;
+            background-color: #abbac3;
+            margin: 2px;
+            overflow: hidden;
+        }
+        
+        .badge-subject {
+            display: inline-block;
+            background-color: #4d4d4d;
+            padding: 4px 6px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        
+        .badge-value {
+            display: inline-block;
+            padding: 4px 6px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        
+        .badge-link {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
+        
+        .bg-blue { background-color: #007ec6 }
+        .bg-orange { background-color: #ffa500 }
+        .bg-green { background-color: #3bca6e }
+        
+        /* 暗色模式适配 */
+        @media (prefers-color-scheme: dark) {
+            .github-badge {
+                background-color: #3a4a55;
+            }
+            .badge-subject {
+                background-color: #2d2d2d;
+            }
+        }
+    </style>
+</div>
 
 <script defer src="https://umami.gabrlie.top/script.js" data-website-id="dd2cf105-7f2b-4a4b-b9ec-f7341431bd97"></script>

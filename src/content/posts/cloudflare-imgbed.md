@@ -1,7 +1,7 @@
 ---
 title: 免费在线图床 CloudFlare ImgBed
 published: 2025-07-30
-description: '使用CloudFlare ImgBed + Cloudflare R2 就等于羊毛逮着一只羊薅，不过tg bot无限存储与无限流量也确实很香'
+description: '使用CloudFlare ImgBed + Cloudflare R2 是不是羊毛逮着一只羊薅，不过tg bot无限存储与无限流量也确实很香'
 image: 'https://img.gabrlie.cn/2025/07/b0beba80954255d6039e847e7e9c325c.png'
 tags: ['Cloudflare', 'EdgeOne', '图床']
 category: '教程'
