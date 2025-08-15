@@ -11,8 +11,8 @@ const currentYear = new Date().getFullYear();
     <div class="transition text-50 text-sm text-center flex flex-wrap justify-center items-center gap-2">
         <!-- 版权信息 -->
         <div class="github-badge">
-            <span class="badge-subject">Copyright</span>
-            <span class="badge-value bg-blue">©{currentYear} {profileConfig.name}</span>
+            <span class="badge-subject">©{currentYear}</span>
+            <span class="badge-value bg-orange">{profileConfig.name}</span>
         </div>
 
         <!-- 备案信息 -->
@@ -20,6 +20,12 @@ const currentYear = new Date().getFullYear();
             <span class="badge-subject">沪ICP备</span>
             <a href="https://beian.miit.gov.cn/" target="_blank" class="badge-link">
                 <span class="badge-value bg-blue">2025137452号-1</span>
+            </a>
+        </div>
+        <div class="github-badge">
+            <span class="badge-subject">沪公网安备</span>
+            <a href="https://beian.mps.gov.cn/#/query/webSearch" target="_blank" class="badge-link">
+                <span class="badge-value bg-blue">31011202021263号</span>
             </a>
         </div>
         
